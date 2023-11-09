@@ -1,12 +1,8 @@
 import 'tailwindcss/tailwind.css';
-import { redirect } from 'next/navigation'
-import { useEffect } from "react";
+import Home from './home';
 
 function Index() {
-    useEffect(() => {
-        redirect('/home');
-    }, []);
-    return <></>;
+    return <Home />;
 }
 
 export default Index;
