@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 function Home() {
     return (
-        <div className="relative flex flex-col min-h-screen bg-slate-300">
+        <div className="relative flex flex-col min-h-screen bg-[url('/index-background.png')] bg-fixed bg-cover bg-center bg-no-repeat overflow-hidden">
             <MetaHead title="Darrow Wolf" />
             <main className="main">
                 <Header text=""/>
