@@ -1,61 +1,47 @@
-import Header from "@/components/Header"
-import Footer from "@/components/Footer"
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import Card from "@/components/Card";
 
-function projects () {
+function Projects() {
   return (
-    <div>
-        <main>
-            <Header text="Projects"/>
-                <div className="grid-cols-3 gap-6 flex justify-center">
-                    <div className="max-w-sm rounded overflow-hidden shadow-lg">
-                        <img className="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains"/>
-                        <div className="px-6 py-4">
-                        <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
-                        <p className="text-gray-700 text-base">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                        </p>
-                        </div>
-                        <div className="px-6 pt-4 pb-2">
-                            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-                        </div>
-                    </div>
+    <div className="flex flex-col min-h-screen pb-10">
+      <main className="flex-grow">
+        <Header text="Projects" />
+        <div className="flex justify-center">
+          <div className="grid grid-cols-3 gap-8">
+            <Card
+              imageSrc="/img/card-top.jpg"
+              title="Project 1"
+              description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil."
+              tags={['C#']}
+            />
 
-                    <div className="max-w-sm rounded overflow-hidden shadow-lg">
-                        <img className="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains"/>
-                        <div className="px-6 py-4">
-                        <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
-                        <p className="text-gray-700 text-base">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                        </p>
-                        </div>
-                        <div className="px-6 pt-4 pb-2">
-                            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-                        </div>
-                    </div>
+            <Card
+              imageSrc="/img/card-top.jpg"
+              title="Project 2"
+              description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil."
+              tags={['Python']}
+            />
 
-                    <div className="max-w-sm rounded overflow-hidden shadow-lg">
-                        <img className="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains"/>
-                        <div className="px-6 py-4">
-                        <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
-                        <p className="text-gray-700 text-base">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                        </p>
-                        </div>
-                        <div className="px-6 pt-4 pb-2">
-                            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-                        </div>
-                    </div>
-                </div>
-            <Footer/>
-        </main>
+            <Card
+              imageSrc="js.png"
+              title="Project 3"
+              description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil."
+              tags={['JavaScript']}
+            />
+
+            <Card
+              imageSrc="/img/card-top.jpg"
+              title="Project 4"
+              description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil."
+              tags={['React']}
+            />
+          </div>
+        </div>
+      </main>
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default projects
+export default Projects;
